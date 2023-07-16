@@ -99,22 +99,39 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <section class="home-section" data-background="bookappbanner copy.png" id="home">
             <div class="js-height-full">
                 <img src="bookappbanner copy.png" a href="ui-forms.html" class="btn btn-mod btn-w  btn-circle btn-medium hidden-xs">Contact
-                        now</a>>
+                        now</a>
 
                 <!-- End Video BG Init -->
-
+<style>
+    .container {
+      position: relative;
+      display: inline-block;
+    }
+    .image {
+      display: block;
+    }
+    .button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: #ff5722;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
                 <!-- Home Page Content -->
 
 
                 <div class="local-scroll">
-                    <a href="ui-forms.html" class="btn btn-mod btn-w  btn-circle btn-medium hidden-xs">Contact
-                        now</a>
-                    <span class="hidden-xs">&nbsp;</span>
-                    <a href="pricing.html" class="btn btn-mod btn-color btn-circle btn-medium ext-link">Get
-                        Pricing</a>
-                </div>
-
-            </div>
+                     <div class="container">
+    <img class="image" src="path/to/your/image.jpg" alt="Image">
+    <button class="button">Click Me</button>
+  </div>
 
     </div>
     </div>
