@@ -164,187 +164,83 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <div class="container relative">
 
             <!-- Section Headings -->
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-                    <div class="section-title">
-                        Web design made easy<span class="st-point">!!</span>
-                    </div>
-                    <h2 class="section-heading">We&rsquo;re branding &amp;&nbsp;digital studio from
-                        South&nbsp;Carolina
-                    </h2>
-                    <div class="section-line mb-60 mb-xxs-30"></div>
-                </div>
-                </h2 style="justify-content: center;">Let us build your brand..</h2>
-            </div>
+            <title>About Section with Slide-In Content</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    .about-section {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .about-section.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .about-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 600px;
+      text-align: center;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .about-section.active .about-content {
+      transform: translateX(0);
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 18px;
+      color: #888;
+      cursor: pointer;
+    }
+  </style>
+           <script>
+    function openAboutSection() {
+      var aboutSection = document.querySelector('.about-section');
+      aboutSection.classList.add('active');
+    }
+    function closeAboutSection() {
+      var aboutSection = document.querySelector('.about-section');
+      aboutSection.classList.remove('active');
+    }
+  </script>
             <!-- End Section Headings -->
 
-            <!-- Nav Tabs -->
-            <div class="align-center mb-50 mb-xxs-30">
-                <ul class="nav nav-tabs tpl-minimal-tabs animate">
-                    <li class="active">
-                        <a href="#one" data-toggle="tab">What we do</a>
-                    </li>
-                    <li>
-                        <a href="#two" data-toggle="tab">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#three" data-toggle="tab">Process</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- End Nav Tabs -->
 
-            <!-- Tab Content -->
-            <div class="tab-content tpl-minimal-tabs-cont">
-
-                <!-- About -->
-                <div class="tab-pane fade in active" id="one">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-                            <div class="section-text">
-
-
-                                Brand creation is our specialty. Violet-Designz is unlike other agencies. We give
-                                you the power to choose what you spend while designing a website you'll love.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skills -->
-                <div class="tab-pane fade" id="two">
-
-                    <div class="row pt-20">
-                        <div class="col-sm-4 col-sm-offset-2">
-
-                            <!-- Bar Item -->
-                            <div class="progress tpl-progress">
-                                <div class="progress-bar animated slideInLeft" role="progressbar" aria-valuenow="90"
-                                    aria-valuemin="0" aria-valuemax="100">
-                                    Branding, % <span>90</span>
-                                </div>
-                            </div>
-                            <!-- End Bar Item -->
-
-                            <!-- Bar Item -->
-                            <div class="progress tpl-progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                    aria-valuemax="100">
-                                    Design, % <span>80</span>
-                                </div>
-                            </div>
-                            <!-- End Bar Item -->
-
-                        </div>
-
-                        <div class="col-sm-4">
-
-                            <!-- Bar Item -->
-                            <div class="progress tpl-progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                    aria-valuemax="100">
-                                    Development, % <span>75</span>
-                                </div>
-                            </div>
-                            <!-- End Bar Item -->
-
-                            <!-- Bar Item -->
-                            <div class="progress tpl-progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                    aria-valuemax="100">
-                                    Production, % <span>85</span>
-                                </div>
-                            </div>
-                            <!-- End Bar Item -->
-
-                        </div>
-                    </div>
-                </div>
-                <!-- End Skills -->
-                <!-- Process -->
-                <div class="tab-pane fade" id="three">
-
-                    <!-- Process Grid -->
-                    <div class="benefits-grid">
-
-                        <!-- Process Item -->
-                        <div class="benefit-item">
-                            <div class="benefit-number">
-                                1
-                            </div>
-                            <div class="benefit-icon">
-                                <span class="icon-trophy"></span>
-                            </div>
-                            <h3 class="benefit-title">Ideas</h3>
-                            <div class="benefits-descr">
-                                Once you're ready to take the next steps,, we'll prepare some of our best
-                                ideas.&nbsp;The process is quick after you've answered a few questions.
-                            </div>
-                        </div>
-                        <!-- End Process Item -->
-
-                        <!-- Process Item -->
-                        <div class="benefit-item">
-                            <div class="benefit-number">
-                                2
-                            </div>
-                            <div class="benefit-icon">
-                                <span class="icon-bubbles"></span>
-                            </div>
-                            <h3 class="benefit-title">Discussion</h3>
-                            <div class="benefits-descr">
-                                Once you're booked, we'll gather some information through a quick call or zoom to
-                                start the process.
-                            </div>
-                        </div>
-                        <!-- End Process Item -->
-
-                        <!-- Process Item -->
-                        <div class="benefit-item">
-                            <div class="benefit-number">
-                                3
-                            </div>
-                            <div class="benefit-icon">
-                                <span class="icon-screen-desktop"></span>
-                            </div>
-                            <h3 class="benefit-title">Development</h3>
-                            <div class="benefits-descr">
-
-                                The web design process is scheduled 3-4 days before launching website for pages 1-3
-                                and seven to fourteen days prior for larger projects. Simple designs, are completed
-                                within; 1 business day of booking. You'll be able to see each step of the process
-                                online.
-
-                            </div>
-                        </div>
-                        <!-- End Process Item -->
-
-                        <!-- Process Item -->
-                        <div class="benefit-item">
-                            <div class="benefit-number">
-                                4
-                            </div>
-                            <div class="benefit-icon">
-                                <span class="icon-rocket"></span>
-                            </div>
-                            <h3 class="benefit-title">Launch</h3>
-                            <div class="benefits-descr">
-                                Lauching your new website, is done within minutes after completion. </div>
-                        </div>
-                        <!-- End Process Item -->
-
-                    </div>
-                    <!-- End Process Grid -->
-
-                </div>
-                <!-- End Process -->
-
-            </div>
-            <!-- End Tab Content -->
-
-            <!-- About Us Section -->
-            <!----team section-->
-            <!-- Team Section -->
+            <!----about section-->
+            <button onclick="openAboutSection()">Open About Section</button>
+  
+  <div class="about-section">
+    <div class="about-content">
+      <span class="close-btn" onclick="closeAboutSection()">&times;</span>
+      <h2>About Us</h2>
+      <p>Welcome to our website! We specialize in providing high-quality products at competitive prices.</p>
+      <h3>Specials and Prices</h3>
+      <p>Check out our latest specials:</p>
+      <ul>
+        <li>Special 1: $19.99</li>
+        <li>Special 2: $14.99</li>
+        <li>Special 3: $9.99</li>
+      </ul>
+    </div>
+  </div>
+            <!-- about section Section -->
             <section class="page-section" id="team">
                 <div class="container relative">
 
