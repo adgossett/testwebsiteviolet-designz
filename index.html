@@ -160,69 +160,98 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
     <!-- End Navigation panel -->
     <!-- About Us Section -->
     <!-- About Us Section -->
-    <section class="page-section bg-gray-lighter" id="about">
-        <div class="container relative">
-
-            <!-- Section Headings -->
-            <title>About Section with Slide-In Content</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-    .about-section {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s ease-in-out;
-    }
-    .about-section.active {
-      opacity: 1;
-      pointer-events: auto;
-    }
-    .about-content {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      max-width: 600px;
-      text-align: center;
-      transform: translateX(-100%);
-      transition: transform 0.3s ease-in-out;
-    }
-    .about-section.active .about-content {
-      transform: translateX(0);
-    }
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 18px;
-      color: #888;
-      cursor: pointer;
-    }
-  </style>
-           <script>
-    function openAboutSection() {
-      var aboutSection = document.querySelector('.about-section');
-      aboutSection.classList.add('active');
-    }
-    function closeAboutSection() {
-      var aboutSection = document.querySelector('.about-section');
-      aboutSection.classList.remove('active');
-    }
-  </script>
-            <!-- End Section Headings -->
 
 
+<!-- shop content-->
+    <style>
+        .image:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .button {
+            color: white;
+            background-color: black;
+        }
+    </style>
+
+    <section id="shop" class="text-center">
+        <h1 class="display-none" aria-hidden="true">Reone</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-lg-4">
+                    <div>
+                        <a href="shop-detail.html" class="display-inline">
+                            <div class="image position-relative" onmouseover="showMessage('Go to flyer page');"
+                                onmouseout="hideMessage();" onclick="redirectToPage('flyer.html');">
+                                <img src="2ndappbwebsite/flyer5.jpg" alt="Flyer" class="img-responsive border-radius">
+                                <div class="overlay">
+
+                                </div>
+                            </div>
+                            <p style="color: black;">Book your knotless braid service </p>
+                            <button style="color: white; background-color: black;">Book now</button>
+                        </a>
+                        <div class="shop_content text-center padding-5px-all margin-10px-top">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-4">
+                    <div>
+                        <a href="shop-detail.html" class="display-inline">
+                            <div class="image position-relative" onmouseover="showMessage('Go to bookings page');"
+                                onmouseout="hideMessage();" onclick="redirectToPage('bookings.html');">
+                                <img src="2ndappbwebsite/flyer6.jpg" alt="Bookings"
+                                    class="img-responsive border-radius">
+                                <div class="overlay"></div>
+                            </div>
+                            <p style="color: black;">Check availability for July. </p>
+                            <button style="color: white; background-color: black;">Book now</button>
+                        </a>
+                        <div class="shop_content text-center padding-5px-all margin-10px-top">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-4">
+                    <div>
+                        <a href="shop-detail.html" class="display-inline">
+                            <div class="image position-relative" onmouseover="showMessage('Go to makeup page');"
+                                onmouseout="hideMessage();" onclick="redirectToPage('makeup.html');">
+                                <img src="2ndappbwebsite/flyer9.jpg" alt="Makeup" class="img-responsive border-radius">
+                                <div class="overlay"></div>
+                            </div>
+                            <p style="color: black;">Book your 30minute makeup session </p>
+                            <button style="color: white; background-color: black;">Book now</button>
+                        </a>
+                        <div class="shop_content text-center padding-5px-all margin-10px-top">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showMessage(message) {
+            window.status = message;
+        }
+
+        function hideMessage() {
+            window.status = '';
+        }
+
+        function redirectToPage(url) {
+            window.location.href = url;
+        }
+    </script>
+
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- shop content end -->
                         
 
             <!-- Devices Image -->
