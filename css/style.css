@@ -105,6 +105,27 @@ Section Text:       17px/1.8 Raleway, arial, sans-serif;
 /* ==============================
    Common styles
    ============================== */
+/* Default styles for larger screens */
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .image {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Additional media queries for even smaller screens if needed */
+@media (max-width: 480px) {
+    .image {
+        max-width: 100%;
+        height: auto;
+    }
+}
 
 .align-center {
 	text-align: center !important;
