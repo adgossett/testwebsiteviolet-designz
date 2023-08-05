@@ -105,6 +105,19 @@ Section Text:       17px/1.8 Raleway, arial, sans-serif;
 /* ==============================
    Common styles
    ============================== */
+/* Regular styles for larger screens */
+.banner {
+    background-image: url('banner-image.jpg');
+    background-size: cover;
+    height: 400px; /* Adjust height as needed */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .banner {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+}
 
 
 .align-center {
